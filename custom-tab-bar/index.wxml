@@ -1,0 +1,6 @@
+<view class="costomTabBar" hover-class="none" hover-stop-propagation="false">
+    <view class="costomTab" wx:for="{{list}}" wx:key="index">
+        <view></view>
+        <view>{{item.text}}</view>
+    </view>
+</view>
