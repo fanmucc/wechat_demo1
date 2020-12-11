@@ -21,7 +21,6 @@ Component({
     methods: {
         // 事件方法
         tabBarList () {
-            console.log('我被触发了')
             let tabBarList = []
             tabBarList = [
                 {
@@ -32,19 +31,38 @@ Component({
                 },
                 {
                     index: 1,
-                    iconClassName: 'iconfont icon icon-home',
-                    text: '购物中心',
+                    iconClassName: 'iconfont icon icon-shangpin',
+                    text: '商品',
                     pagePath: '/pages/cart/cart'
                 },
                 {
                     index: 2,
-                    iconClassName: 'iconfont icon icon-home',
-                    text: '个人中心',
+                    iconClassName: 'iconfont icon icon-nickname',
+                    text: '我的',
                     pagePath: '/pages/user/user'
                 },
             ];
             this.setData({
                 list: tabBarList
+            })
+        },
+        // 点击切换tabbar页面事件
+        switchTap (event) {
+            const path = event.currentTarget.dataset.path;
+            const index = event.currentTarget.dataset.index;
+            console.log(index, path)
+            // 页面跳转
+            wx.switchTab({
+                url: path,
+                fail: function () {
+
+                },
+                success: function () {
+
+                },
+                comlpete: function () {
+
+                }
             })
         }
     },

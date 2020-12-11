@@ -38,6 +38,10 @@ App({
     // 自定义tabbar数据
     isShowTabBar: true,
     // 检测手机型号，主要为iPhone 全面屏手机，防止tabbar被小白条覆盖
-    iphoneModel: wx.getSystemInfoSync()['model'].indexOf("iPhone X") !== -1 || wx.getSystemInfoSync()['model'].indexOf("iPhone 11") !== -1 || wx.getSystemInfoSync()['model'].indexOf("iPhone XR") !== -1 || wx.getSystemInfoSync()['model'].indexOf("iPhone 12") !== -1 || wx.getSystemInfoSync()['model'].indexOf("model") !== -1,
+    iphoneModel: wx.getSystemInfoSync()['model'].indexOf("iPhone X") !== -1 || wx.getSystemInfoSync()['model'].indexOf("iPhone 11") !== -1 || wx.getSystemInfoSync()['model'].indexOf("iPhone XR") !== -1 || wx.getSystemInfoSync()['model'].indexOf("iPhone 12") !== -1 || wx.getSystemInfoSync()['model'].indexOf("unknown") !== -1,
+    // 获取状态栏高度
+    iphoneStatusBarHeight: wx.getSystemInfoSync['statusBarHeight'],
+    // 获取小程序右上角按钮布局
+    getMenuButton: wx.getMenuButtonBoundingClientRect()
   }
 })

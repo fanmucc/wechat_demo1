@@ -1,0 +1,29 @@
+@import '/assets/iconfont/iconfont.wxss';
+
+.costomTabBar {
+    display: flex;
+    overflow: hidden;
+    padding: 5px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #d5d5d5;
+}
+
+.costomTab {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+.tabBar-icon {
+    font-size: 25px;
+}
+
+.tabBar-text {
+    position: absolute;
+    font-size: 10px;
+    top: 22px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
