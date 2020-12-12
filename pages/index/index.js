@@ -57,5 +57,8 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  searchClick () {
+    // 搜索事件
   }
 })

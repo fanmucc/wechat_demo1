@@ -3,7 +3,7 @@ Component({
     properties: {
         backgroundColor: {
             type: String,
-            value: '#ffffff'
+            value: '#F0F4F8'
         },
         home: {
             type: Boolean,

@@ -5,8 +5,9 @@
         <view class="nacigation-icon iconfont icon-home"></view>
     </view>
     <view wx:else class="custom-navigation-icon-back-one icon-one" style="width: {{width - 10}}px; top: {{top}}px; left: {{left}}px; height: {{boxHeight}}px">
-        <view wx:if="{{ home }}" class="nacigation-icon iconfont icon-home"></view>
-        <view wx:else class="nacigation-icon iconfont icon-back"></view>
+        <view wx:if="{{ home && !back}}" class="nacigation-icon iconfont icon-home"></view>
+        <view wx:elif="{{!home && back}}" class="nacigation-icon iconfont icon-back"></view>
+        <view wx:else class="nacigation-icon"></view>
     </view>
     <view class="{{screen ? 'nacigation-title-relative' : 'nacigation-title-fixed'}}" style="top:{{top}}px; width: {{textWidth}}px;"> {{title}} </view>
     <!-- <view class="{{screen ? 'nacigation-title-relative' : 'nacigation-title-fixed'}}" style="top:{{top}}px; width: {{textWidth}}px; left: {{screen ? '0' : width + 10}}px"> {{title}} </view> -->

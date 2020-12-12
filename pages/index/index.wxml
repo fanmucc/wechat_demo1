@@ -1,6 +1,12 @@
 <!--index.wxml-->
-<Navigation home="{{false}}" back="{{true}}" title="我是标题" screen="{{true}}" borderBottom="{{true}}"/>
-<view class="container">
+<Navigation home="{{false}}" back="{{false}}" title="抖音数据工具" screen="{{true}}" borderBottom="{{true}}"/>
+<scroll-view class="container" style="height: 400rpx">
+  <view class="content-input" bind:tap="searchClick">
+    <text class="ipput-placeholder">达人、视频、音乐</text>
+    <icon class="icon-small" type="search" size="14"></icon>
+  </view>
+</scroll-view>
+<!-- <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -11,4 +17,4 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-</view>
+</view> -->

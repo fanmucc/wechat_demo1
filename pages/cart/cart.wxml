@@ -1,1 +1,2 @@
+<Navigation home="{{false}}" back="{{false}}" title="" screen="{{true}}" borderBottom="{{false}}"/>
 <view>购物车</view>
