@@ -1,3 +1,52 @@
+@import '/assets/iconfont/iconfont.wxss';
 .custom-navigation {
-    
+    font-size: 12px;
+    width: 100%;
+}
+.custom-navigation-icon-back-one {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.icon-all {
+    justify-content: space-around;
+    padding: 0 10px;
+    border: 1px solid #DFDFDF;
+    border-radius: 25px;
+}
+
+.icon-one {
+    padding-left: 10px;
+}
+
+.nacigation-icon {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nacigation-title-fixed {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 18px;
+}
+
+.nacigation-title-relative {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 18px;
 }

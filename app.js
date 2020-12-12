@@ -40,8 +40,10 @@ App({
     // 检测手机型号，主要为iPhone 全面屏手机，防止tabbar被小白条覆盖
     iphoneModel: wx.getSystemInfoSync()['model'].indexOf("iPhone X") !== -1 || wx.getSystemInfoSync()['model'].indexOf("iPhone 11") !== -1 || wx.getSystemInfoSync()['model'].indexOf("iPhone XR") !== -1 || wx.getSystemInfoSync()['model'].indexOf("iPhone 12") !== -1 || wx.getSystemInfoSync()['model'].indexOf("unknown") !== -1,
     // 获取状态栏高度
-    iphoneStatusBarHeight: wx.getSystemInfoSync['statusBarHeight'],
+    iphoneStatusBarHeight: wx.getSystemInfoSync()['statusBarHeight'],
     // 获取小程序右上角按钮布局
-    getMenuButton: wx.getMenuButtonBoundingClientRect()
+    getMenuButton: wx.getMenuButtonBoundingClientRect(),
+    // 获取手机屏幕宽度
+    screenWidth: wx.getSystemInfoSync()['screenWidth']
   }
 })

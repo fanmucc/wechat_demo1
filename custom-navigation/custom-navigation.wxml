@@ -1,3 +1,13 @@
-<view class="custom-navigation">
-    状态栏
+<view class="custom-navigation" style="height: {{height}}px; background-color:{{backgroundColor}}; position: {{screen ? 'relative' : 'fixed'}}; box-shadow: {{borderBottom ? '0 2rpx 0 0 rgba(240,240,240,1)' : ''}}">
+    <view wx:if="{{ home && back}}" class="custom-navigation-icon-back-one icon-all" style="width: {{width - 20}}px; top: {{top}}px; left: {{left}}px; height: {{boxHeight - 2}}px">
+        <view class="nacigation-icon iconfont icon-back"></view>
+        <view> | </view>
+        <view class="nacigation-icon iconfont icon-home"></view>
+    </view>
+    <view wx:else class="custom-navigation-icon-back-one icon-one" style="width: {{width - 10}}px; top: {{top}}px; left: {{left}}px; height: {{boxHeight}}px">
+        <view wx:if="{{ home }}" class="nacigation-icon iconfont icon-home"></view>
+        <view wx:else class="nacigation-icon iconfont icon-back"></view>
+    </view>
+    <view class="{{screen ? 'nacigation-title-relative' : 'nacigation-title-fixed'}}" style="top:{{top}}px; width: {{textWidth}}px;"> {{title}} </view>
+    <!-- <view class="{{screen ? 'nacigation-title-relative' : 'nacigation-title-fixed'}}" style="top:{{top}}px; width: {{textWidth}}px; left: {{screen ? '0' : width + 10}}px"> {{title}} </view> -->
 </view>

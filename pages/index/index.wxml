@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<Navigation/>
+<Navigation home="{{false}}" back="{{true}}" title="我是标题" screen="{{true}}" borderBottom="{{true}}"/>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
