@@ -2,6 +2,7 @@
 .custom-navigation {
     font-size: 12px;
     width: 100%;
+    z-index: 999;
 }
 .custom-navigation-icon-back-one {
     position: absolute;

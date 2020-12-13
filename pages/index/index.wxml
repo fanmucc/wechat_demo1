@@ -1,11 +1,43 @@
 <!--index.wxml-->
 <Navigation home="{{false}}" back="{{false}}" title="抖音数据工具" screen="{{true}}" borderBottom="{{true}}"/>
-<scroll-view class="container" style="height: 400rpx">
+<scroll-view class="container">
   <view class="content-input" bind:tap="searchClick">
     <text class="ipput-placeholder">达人、视频、音乐</text>
     <icon class="icon-small" type="search" size="14"></icon>
   </view>
+  <view class="content-add-accout" bind:tap="addAccout" style="font-size: 36rpx;" bind:tap="showPopup">
+    <view class="iconfont icon-douyin" style="font-size: 60rpx;"></view>
+    添加抖音账号
+  </view>
+  <view class="content-operat">
+    <view class="opearat"></view>
+    <view class="opearat"></view>
+    <view class="opearat"></view>
+  </view>
+  <view class="daren remen">
+    <view><text style="font-weight: 700;">热门达人榜 <text class="iconfont icon-next"></text></text></view>
+    <view>
+      <text>①</text>
+      <view>
+        <van-image
+          round
+          fit="fill"
+          width="60rpx"
+          height="60rpx"
+          fit="contain"
+          src="https://img.yzcdn.cn/vant/cat.jpeg"
+        />
+      </view>
+    </view>
+  </view>
+  <view class="remenvedio remen">
+    <view><text style="font-weight: 700;">热门视频榜 <text class="iconfont icon-next"></text></text></view>
+  </view>
+  <view class="remenmusic remen">
+    <view><text style="font-weight: 700;">热门音乐榜 <text class="iconfont icon-next"></text></text></view>
+  </view>
 </scroll-view>
+<van-popup show="{{ show }}" bind:close="onClose">弹出的内容</van-popup>
 <!-- <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>

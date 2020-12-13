@@ -7,7 +7,8 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    show: false
   },
   //事件处理函数
   bindViewTap: function() {
@@ -60,5 +61,37 @@ Page({
   },
   searchClick () {
     // 搜索事件
-  }
+    wx.navigateTo({
+      url: '../search/search',
+      success: function (res) {
+        console.log(res, 'res')
+      },
+      fail: function (err) {
+        console.log(err, 'err')
+      },
+      complete: function() {
+
+      }
+    })
+  },
+  addAccout () {
+    // 添加账号
+  },
+  // 弹出层
+  showPopup() {
+    console.log(111)
+    this.setData({ show: true });
+    wx.hideTabBar({
+      success: function(res) {
+        console.log('成功隐藏', 'res')
+      },
+      fail: function (err) {
+        console.log(err, 'err')
+      }
+    })
+  },
+
+  onClose() {
+    this.setData({ show: false });
+  },
 })

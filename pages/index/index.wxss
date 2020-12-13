@@ -12,9 +12,40 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20rpx;
+  padding: 0 30rpx;
 }
 .ipput-placeholder {
   font-size: 24rpx;
   color: #9B9B9B;
+}
+
+.content-add-accout {
+    margin-top: 40rpx;
+    display: flex;
+    height: 100rpx;
+    border-radius: 10rpx;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #7086F7, #684AE8);
+    color: #fff;
+}
+
+.content-operat {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opearat {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.remen {
+  margin-top: 40rpx;
+  padding: 30rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
 }

@@ -1,0 +1,4 @@
+<view class="" hover-class="none" hover-stop-propagation="false">
+    搜索页    
+    <view bind:tap="backPaage">返回上一页</view>
+</view>
