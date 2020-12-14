@@ -8,7 +8,8 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    show: false
+    show: false,
+    pageHeight: 0
   },
   //事件处理函数
   bindViewTap: function() {
@@ -49,10 +50,16 @@ Page({
       this.getTabBar().setData({
         selected: 0
       })
-    }
+    };
+    let navigathHeight = wx.getStorageSync('navigationHeight');
+    let tabBarHeight = wx.getStorageSync('tabBarHeight');
+    let winHeight = wx.getSystemInfoSync()['windowHeight'];
+    this.setData({
+      pageHeight: winHeight - Number(navigathHeight) - Number(tabBarHeight)
+    })
+    
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

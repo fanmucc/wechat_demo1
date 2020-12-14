@@ -1,4 +1,4 @@
-<view class="costomTabBar" hover-class="none" hover-stop-propagation="false" style="padding-bottom: {{iphoneModel === true ? '30' : '15'}}px;">
+<view class="tab-bar" hover-class="none" hover-stop-propagation="false" style="padding-bottom: {{iphoneModel === true ? '30' : '15'}}px;">
     <view class="costomTab" wx:for="{{list}}" wx:key="index" style="color: {{selected === index ? '#4B48EC' : ''}}" data-path="{{item.pagePath}}" data-index="{{item.index}}" bind:tap="switchTap">
         <view class="{{item.iconClassName}} tabBar-icon"></view>
         <view class="tabBar-text">{{item.text}}</view>

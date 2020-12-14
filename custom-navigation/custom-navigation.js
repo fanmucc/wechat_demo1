@@ -36,9 +36,12 @@ Component({
     },
     lifetimes: {
         attached () {
-            console.log(app.globalData.iphoneStatusBarHeight)
-            console.log(app.globalData.getMenuButton)
-            this.reLeftBoxPagePosition()
+            this.reLeftBoxPagePosition();
+            // 获取tabbar高度值
+            var obj = this.createSelectorQuery().in(this);
+            obj.select('.custom-navigation').boundingClientRect(function (res) {
+                wx.setStorageSync('navigationHeight', res.height)
+            }).exec()
         }
     },
     methods: {

@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <Navigation home="{{false}}" back="{{false}}" title="抖音数据工具" screen="{{true}}" borderBottom="{{true}}"/>
-<scroll-view class="container">
+<scroll-view scroll-y="{{true}}" class="container" style="height: {{pageHeight}}px;">
   <view class="content-input" bind:tap="searchClick">
     <text class="ipput-placeholder">达人、视频、音乐</text>
     <icon class="icon-small" type="search" size="14"></icon>
@@ -15,27 +15,193 @@
     <view class="opearat"></view>
   </view>
   <view class="daren remen">
-    <view><text style="font-weight: 700;">热门达人榜 <text class="iconfont icon-next"></text></text></view>
-    <view>
-      <text>①</text>
-      <view>
-        <van-image
-          round
-          fit="fill"
-          width="60rpx"
-          height="60rpx"
-          fit="contain"
-          src="https://img.yzcdn.cn/vant/cat.jpeg"
-        />
+    <view style="padding: 30rpx 0 0 30rpx;"><text style="font-weight: 700;">热门达人榜 <text class="iconfont icon-next"></text></text></view>
+    <view class="daren-content">
+      <text class="daren-rank">①</text>
+      <view class="daren-content-rg">
+        <view class="rg-rg">
+          <van-image
+            class="daren-img"
+            round
+            fit="fill"
+            width="60rpx"
+            height="60rpx"
+            fit="cover"
+            src="https://img.yzcdn.cn/vant/cat.jpeg"
+          />
+          <text class="daren-name">语文山水</text>
+        </view>
+        <text class="daren-count">+42.9W</text>
+      </view>
+    </view>
+    <view class="daren-content">
+      <text class="daren-rank">②</text>
+      <view class="daren-content-rg">
+        <view class="rg-rg">
+          <van-image
+            class="daren-img"
+            round
+            fit="fill"
+            width="60rpx"
+            height="60rpx"
+            fit="cover"
+            src="https://img.yzcdn.cn/vant/cat.jpeg"
+          />
+          <text class="daren-name">语文山水</text>
+        </view>
+        <text class="daren-count">+402.9W</text>
+      </view>
+    </view>
+    <view class="daren-content">
+      <text class="daren-rank">③</text>
+      <view class="daren-content-rg">
+        <view class="rg-rg">
+          <van-image
+            class="daren-img"
+            round
+            fit="fill"
+            width="60rpx"
+            height="60rpx"
+            fit="cover"
+            src="https://img.yzcdn.cn/vant/cat.jpeg"
+          />
+          <text class="daren-name">大大大大大大大大大大啊大大大大大</text>
+        </view>
+        <text class="daren-count">+4002.9W</text>
       </view>
     </view>
   </view>
-  <view class="remenvedio remen">
-    <view><text style="font-weight: 700;">热门视频榜 <text class="iconfont icon-next"></text></text></view>
+  <view class="remenvideo remen">
+    <view style="padding: 30rpx 0 0 30rpx;"><text style="font-weight: 700;">热门视频榜 <text class="iconfont icon-next"></text></text></view>
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 92%">
+      <view class="video-container">
+        <view class="video">
+          <view class="video-img">
+            <image style="width: 100px; height: 133px; background-color: #eeeeee;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          </view>
+          <view class="video-content">
+            <text>①</text>
+            <text>点赞</text>
+            <text>+93.1w</text>
+          </view>
+        </view>
+      </view>
+      <view class="video-container">
+        <view class="video">
+          <view class="video-img">
+            <image style="width: 100px; height: 133px; background-color: #eeeeee;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          </view>
+          <view class="video-content">
+            <text>①</text>
+            <text>点赞</text>
+            <text>+93.1w</text>
+          </view>
+        </view>
+      </view>
+      <view class="video-container">
+        <view class="video">
+          <view class="video-img">
+            <image style="width: 100px; height: 133px; background-color: #eeeeee;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          </view>
+          <view class="video-content">
+            <text>①</text>
+            <text>点赞</text>
+            <text>+93.1w</text>
+          </view>
+        </view>
+      </view>
+      <view class="video-container">
+        <view class="video">
+          <view class="video-img">
+            <image style="width: 100px; height: 133px; background-color: #eeeeee;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          </view>
+          <view class="video-content">
+            <text>①</text>
+            <text>点赞</text>
+            <text>+93.1w</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
   </view>
   <view class="remenmusic remen">
-    <view><text style="font-weight: 700;">热门音乐榜 <text class="iconfont icon-next"></text></text></view>
+    <view style="padding: 30rpx 0 0 30rpx;"><text style="font-weight: 700;">热门音乐榜 <text class="iconfont icon-next"></text></text></view>
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 92%">
+      <view class="video-container">
+        <view class="video">
+          <view class="video-img">
+            <image style="width: 100px; height: 133px; background-color: #eeeeee;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          </view>
+          <view class="video-content">
+            <text>①</text>
+            <text>点赞</text>
+            <text>+93.1w</text>
+          </view>
+        </view>
+      </view>
+      <view class="video-container">
+        <view class="video">
+          <view class="video-img">
+            <image style="width: 100px; height: 133px; background-color: #eeeeee;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          </view>
+          <view class="video-content">
+            <text>①</text>
+            <text>点赞</text>
+            <text>+93.1w</text>
+          </view>
+        </view>
+      </view>
+      <view class="video-container">
+        <view class="video">
+          <view class="video-img">
+            <image style="width: 100px; height: 133px; background-color: #eeeeee;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          </view>
+          <view class="video-content">
+            <text>①</text>
+            <text>点赞</text>
+            <text>+93.1w</text>
+          </view>
+        </view>
+      </view>
+      <view class="video-container">
+        <view class="video">
+          <view class="video-img">
+            <image style="width: 100px; height: 133px; background-color: #eeeeee;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          </view>
+          <view class="video-content">
+            <text>①</text>
+            <text>点赞</text>
+            <text>+93.1w</text>
+          </view>
+        </view>
+      </view>
+      <view class="video-container">
+        <view class="video">
+          <view class="video-img">
+            <image style="width: 100px; height: 133px; background-color: #eeeeee;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          </view>
+          <view class="video-content">
+            <text>①</text>
+            <text>点赞</text>
+            <text>+93.1w</text>
+          </view>
+        </view>
+      </view>
+      <view class="video-container">
+        <view class="video">
+          <view class="video-img">
+            <image style="width: 100px; height: 133px; background-color: #eeeeee;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          </view>
+          <view class="video-content">
+            <text>①</text>
+            <text>点赞</text>
+            <text>+93.1w</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
   </view>
+  <view class="tel">联系我</view>
 </scroll-view>
 <van-popup show="{{ show }}" bind:close="onClose">弹出的内容</van-popup>
 <!-- <view class="container">

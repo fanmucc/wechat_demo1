@@ -1,10 +1,10 @@
 @import '/assets/iconfont/iconfont.wxss';
 
-.costomTabBar {
+.tab-bar {
     display: flex;
     overflow: hidden;
     padding: 5px 0;
-    background-color: #ffffff;
+    background-color: #fff;
     border-top: 1px solid #d5d5d5;
 }
 

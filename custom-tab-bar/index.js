@@ -15,7 +15,12 @@ Component({
         // 组件声明周期
         attached () {
             // 节点树完成后，可以使用setData渲染节点，但是无法操作节点
-            this.tabBarList()
+            this.tabBarList();
+            // 获取tabbar高度值
+            var obj = this.createSelectorQuery().in(this);
+            obj.select('.tab-bar').boundingClientRect(function (res) {
+                wx.setStorageSync('tabBarHeight', res.height)
+            }).exec()
         }
     },
     methods: {
