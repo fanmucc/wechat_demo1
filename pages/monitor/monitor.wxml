@@ -1,0 +1,28 @@
+<Navigation home="{{false}}" back="{{true}}" title="数据监测" screen="{{true}}" borderBottom="{{false}}" color="#fff" backgroundColor="#453BF4"/>
+<view>
+    <view class="prompt">
+        <view class="prompt-list">
+            <text class="prompt-title">使用说明:</text>
+            <ul class="prompt-ul">
+                <li class="ul-list">
+                    1. 您可以在此页面搜索需要监控的达人/视频, 并开启提醒功能
+                </li>
+                <li class="ul-list">
+                    2. 开启后, 提醒消息将通过微信公众号发送给您
+                </li>
+            </ul>
+        </view>
+    </view>
+    <view class="prompt-search">
+        <div class="search-btn">
+            <span class="{{btn ? 'btn' : ''}} daren" data-search="daren" bind:tap="btnTap">达人</span>
+            <span class="{{btn ? '' : 'btn'}} video" data-search="video" bind:tap="btnTap">视频</span>
+        </div>
+        <div class="search-input">
+            <div class="inp">
+                <input class="inp-value" vlaue="{{value}}" placeholder="{{btn? placeholder.daren: placeholder.video}}"/>
+                <span class="inp-btn">搜索</span>
+            </div>
+        </div>
+    </view>
+</view>

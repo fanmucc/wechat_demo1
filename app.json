@@ -4,6 +4,7 @@
     "pages/cart/cart",
     "pages/user/user",
     "pages/search/search",
+    "pages/monitor/monitor",
     "pages/logs/logs"
   ],
   "usingComponents": {

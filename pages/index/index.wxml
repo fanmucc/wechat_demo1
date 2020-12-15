@@ -10,7 +10,7 @@
     添加抖音账号
   </view>
   <view class="content-operat">
-    <view class="opearat"></view>
+    <view class="opearat" bind:tap="routeMonitor"></view>
     <view class="opearat"></view>
     <view class="opearat"></view>
   </view>

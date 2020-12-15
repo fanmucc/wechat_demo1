@@ -3,5 +3,8 @@
     "van-field": "@vant/weapp/field/index",
     "van-popup": "@vant/weapp/popup/index",
     "van-image": "@vant/weapp/image/index"
+  },
+  "window": {
+    "backgroundColor": "#F0F4F8"
   }
 }

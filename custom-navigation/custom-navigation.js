@@ -5,6 +5,10 @@ Component({
             type: String,
             value: '#F0F4F8'
         },
+        color: {
+            type: String,
+            value: 'black'
+        },
         home: {
             type: Boolean,
             value: false

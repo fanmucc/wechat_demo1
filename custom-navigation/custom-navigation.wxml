@@ -1,4 +1,4 @@
-<view class="custom-navigation" style="height: {{height}}px; background-color:{{backgroundColor}}; position: {{screen ? 'relative' : 'fixed'}}; box-shadow: {{borderBottom ? '0 2rpx 0 0 rgba(240,240,240,1)' : ''}}">
+<view class="custom-navigation" style="position: {{screen ? 'relative' : 'fixed'}}; height: {{height}}px; color: {{color}}; background-color:{{backgroundColor}};  box-shadow: {{borderBottom ? '0 2rpx 0 0 rgba(240,240,240,1)' : ''}}">
     <view wx:if="{{ home && back}}" class="custom-navigation-icon-back-one icon-all" style="width: {{width - 20}}px; top: {{top}}px; left: {{left}}px; height: {{boxHeight - 2}}px">
         <view class="nacigation-icon iconfont icon-back"></view>
         <view> | </view>

@@ -84,6 +84,18 @@ Page({
   addAccout () {
     // 添加账号
   },
+  // 跳转到数据监测页
+  routeMonitor () {
+    wx.navigateTo({
+      url: '../monitor/monitor',
+      success: function(res) {
+        console.log(res)
+      },
+      fail: function(err) {
+        console.log(err)
+      }
+    })
+  },
   // 弹出层
   showPopup() {
     console.log(111)
