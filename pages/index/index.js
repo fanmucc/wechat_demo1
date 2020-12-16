@@ -96,6 +96,18 @@ Page({
       }
     })
   },
+  // 跳转到去水印界面
+  remoteWatermark () {
+    wx.navigateTo({
+      url: '../watermark/watermark',
+      success: function(res) {
+        console.log(res)
+      },
+      fail: function(err) {
+        console.log(err)
+      }
+    })
+  },
   // 弹出层
   showPopup() {
     console.log(111)

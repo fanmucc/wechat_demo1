@@ -1,0 +1,5 @@
+<Navigation home="{{true}}" back="{{true}}" title="去水印-轻抖" screen="{{true}}" borderBottom="{{false}}"  backgroundColor="#F0F4F8"/>
+<view>
+    {{value}}
+    <van-toast id="van-toast" />
+</view>

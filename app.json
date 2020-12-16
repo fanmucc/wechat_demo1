@@ -5,6 +5,7 @@
     "pages/user/user",
     "pages/search/search",
     "pages/monitor/monitor",
+    "pages/watermark/watermark",
     "pages/logs/logs"
   ],
   "usingComponents": {

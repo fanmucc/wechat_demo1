@@ -11,7 +11,7 @@
   </view>
   <view class="content-operat">
     <view class="opearat" bind:tap="routeMonitor"></view>
-    <view class="opearat"></view>
+    <view class="opearat" bind:tap="remoteWatermark"></view>
     <view class="opearat"></view>
   </view>
   <view class="daren remen">

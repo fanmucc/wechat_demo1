@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "van-toast": "@vant/weapp/toast/index"
+    },
+    "window": {
+        "backgroundColor": "#F0F4F8"
+    }
+}
